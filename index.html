@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master DOM Manipulation: Part 1</title>
+  <style>
+    /* Your styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .list-items {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .list-items:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="main-heading">Favourite Movie Franchise</h1>
+    <ul>
+      <li class="list-items">The Matrix</li>
+      <li class="list-items">Star Wars</li>
+      <li class="list-items">Harry Potter</li>
+      <li class="list-items">Lord of the Rings</li>
+      <li class="list-items">Marvel</li>
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
