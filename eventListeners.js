@@ -11,7 +11,7 @@ buttonTwo.addEventListener('click', () => {
 });
 
 buttonTwo.addEventListener('click', (event) => {
-    console.log('This is the event target:', event.target);
+    console.log('Arrow function with event argument:', event.target);
 });
 
 const buttonOne = document.querySelector('.btn-1');
@@ -25,6 +25,22 @@ buttonOne.addEventListener('mouseover', changeBackgroundColor);
 buttonOne.addEventListener('mouseout', function(event) {
   event.target.style.backgroundColor = '';
 });
+
+const buttonThree = document.querySelector('.btn-3');
+
+buttonThree.addEventListener('click', toggleHiddenContent = () => {
+    const hiddenContent = document.querySelector('.hidden-content');
+    if (hiddenContent.classList.contains('reveal-hidden')) {
+        hiddenContent.classList.remove('reveal-hidden');
+        buttonThree.textContent = 'Reveal';
+    } else {
+        buttonThree.textContent = 'Hide';
+        hiddenContent.classList.add('reveal-hidden');
+    }
+});
+
+// An event listener can only be removed by reference
+// buttonThree.removeEventListener('click', toggleHiddenContent);
 
 // Below is the list provided by AI.
 

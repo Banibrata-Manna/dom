@@ -90,6 +90,14 @@
       .box-3 {
         margin-bottom: 20px;
       }
+      
+      .hidden-content {
+        display: none;
+      }
+
+      .hidden-content.reveal-hidden {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -109,8 +117,11 @@
 
       <div class="boxes box-3">
         <h1 id="heading">Example 3</h1>
-        <button class="btn-3">Enter</button>
+        <button class="btn-3">Reveal</button>
       </div>
+    </div>
+    <div class="hidden-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt minima, pariatur numquam fugit laboriosam suscipit possimus atque aliquam omnis odit voluptatum natus quo exercitationem! Iusto amet sunt culpa ex!</p>
     </div>
     <script src="eventListeners.js"></script>
   </body>
